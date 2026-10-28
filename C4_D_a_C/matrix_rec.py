@@ -117,6 +117,8 @@ A1=create_2n_matrix()
 print('\nNow for B')
 B1=create_2n_matrix()
 
+#remember n must be the same. making exception handling is not worth it here
+
 C1 = [[0] * len(A1[0]) for _ in range(len(A1[0]))]
 
 size1 = len(A1[0])

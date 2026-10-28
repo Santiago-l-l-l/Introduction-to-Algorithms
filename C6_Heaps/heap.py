@@ -195,7 +195,11 @@ def max_heapify(A: MaxHeap, i: int) -> None:
 
 
 def build_max_heap(A: MaxHeap) -> None:
-    """Turn A.data into a max-heap in place. O(n)."""
+    """Turn A.data into a max-heap in place. O(n). 
+    In a complete binary tree represented as an array, 
+    all elements past the halfway point are leaves 
+    (nodes with no children)."""
+    
     A.heap_size = len(A.data)
     for i in range(A.heap_size // 2 - 1, -1, -1):
         max_heapify(A, i)
